@@ -1,11 +1,12 @@
-import Tabs from './rui/Tabs/Tabs';
+import Tabs from './src/rui/Tabs/Tabs';
+import TabNav from './src/rui/Tabs/TabNav';
+import TabPane from './src/rui/Tabs/TabPane';
+import TabContent from './src/rui/Tabs/TabContent';
 
-import * as dom from './utils/dom';
-const _rui={
-  Tabs
+import * as dom from './src/utils/dom';
+const rui={
+  Tabs,TabNav,TabPane,TabContent
 };
-const _dom={
-  dom
-};
-export _rui;
-export _dom;
+export {rui};
+const util={dom};
+export {util};
